@@ -10,9 +10,7 @@ CCirtucalBuffer и CCircularBufferExt - для циклического буфе
 Циклический буфер для хранения данных произвольного типа в виде stl-совместимого контейнера.
 Шаблон класс(ы) параметризуются типом хранимого значения и  аллокатором.
 
-## Требования
-
-Контейнер должен удовлетворяет [следующим требованиям](https://en.cppreference.com/w/cpp/named_req/Container) для stl-контейнера.
+Контейнер удовлетворяет [следующим требованиям](https://en.cppreference.com/w/cpp/named_req/Container) для stl-контейнера.
 А также [требованиям для последовательного контейнера](https://en.cppreference.com/w/cpp/named_req/SequenceContainer)
 
 Исключая rvalue и move-семантику.
