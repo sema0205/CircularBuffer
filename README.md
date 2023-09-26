@@ -1,33 +1,33 @@
 # Circular Buffer
 
-STL - совместимый контейнер "Циклический буфер", с поддержкой возможности расширения и фиксированным размером.
+STL is a compatible "Circ Buffer" container, extensible and fixed in size.
 
-[Циклический буфер](https://en.wikipedia.org/wiki/Circular_buffer) - структура данных, которая часто применяется для буферизации в задачах по передачи и обработки потока данных.
+[Circular buffer](https://en.wikipedia.org/wiki/Circular_buffer) is a data structure that is often used for buffering in tasks of transmitting and processing data streams.
 
-Два класса:
-CCirtucalBuffer и CCircularBufferExt - для циклического буфера и циклического буфера с возможностью расширения.
+Two classes:
+CCirtucalBuffer and CCircularBufferExt - for circular buffer and circular buffer with extensibility.
 
-Циклический буфер для хранения данных произвольного типа в виде stl-совместимого контейнера.
-Шаблон класс(ы) параметризуются типом хранимого значения и  аллокатором.
+A circular buffer for storing arbitrary data types in the form of an stl-compatible container.
+The template class(es) are parameterized by the type of the stored value and the allocator.
 
-Контейнер удовлетворяет [следующим требованиям](https://en.cppreference.com/w/cpp/named_req/Container) для stl-контейнера.
-А также [требованиям для последовательного контейнера](https://en.cppreference.com/w/cpp/named_req/SequenceContainer)
+The container satisfies [the following requirements](https://en.cppreference.com/w/cpp/named_req/Container) for a stl container.
+And also [requirements for a sequential container](https://en.cppreference.com/w/cpp/named_req/SequenceContainer)
 
-Исключая rvalue и move-семантику.
+Excluding rvalue and move semantics.
 
-## Итератор
+## Iterator
 
-Представляет итератор произвольного доступа.
+Represents a random access iterator.
 
-## Кольцевой буфер с расширением максимального размера.
+## Ring buffer with maximum size extension.
 
-Класс CCircularBufferExt обладает функциональностью для расширения свой максимального размера.
-Реализовано след поведение: в случае достижения размера кольцевого буфера максимального возможного своего размера, значение максимального размера удваивается.
+The CCircularBufferExt class has functionality to extend its maximum size.
+The following behavior has been implemented: if the size of the ring buffer reaches its maximum possible size, the value of the maximum size is doubled.
 
-## Тесты
+## Tests
 
-Реализация Кольцевого Буфера покрыта тестами, с помощью фреймворка Google Test.
+The implementation of the Ring Buffer is covered with tests using the Google Test framework.
 
-## Ограничения
+## Restrictions
 
-* Не используются стандартные контейнеры
+* Standard containers are not used
